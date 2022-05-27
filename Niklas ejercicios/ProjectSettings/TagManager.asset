@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bota
+  - no bota
+  - es lenta de cj
   layers:
   - Default
   - TransparentFX
