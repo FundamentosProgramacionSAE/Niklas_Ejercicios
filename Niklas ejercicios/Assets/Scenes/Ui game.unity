@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 5685955}
   - component: {fileID: 5685954}
   m_Layer: 5
-  m_Name: Text
+  m_Name: Upgradecost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,7 +157,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.1}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5685954
@@ -193,9 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Upgrade
-
-'
+  m_Text: 
 --- !u!222 &5685955
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -580,8 +578,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 440498249}
+        m_TargetAssemblyTypeName: SpearWorker, Assembly-CSharp
         m_MethodName: Clicked1
         m_Mode: 1
         m_Arguments:
@@ -675,8 +673,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 956784013}
+        m_TargetAssemblyTypeName: ShiedAndSwordWorker, Assembly-CSharp
         m_MethodName: Upgradebutton4
         m_Mode: 1
         m_Arguments:
@@ -735,6 +733,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440498247}
   - component: {fileID: 440498248}
+  - component: {fileID: 440498249}
   m_Layer: 5
   m_Name: First upgrade
   m_TagString: Untagged
@@ -817,6 +816,27 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &440498249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 440498246}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72fd9fd48b19cac4f970c713f753d2b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1003688048}
+  timerUP1MaxValue: 1
+  timerUP1Value: 0
+  money1: 10
+  upgraded1: 1
+  costUpgrade1: 0
+  Money1Text: {fileID: 973995901}
+  slider1: {fileID: 440498248}
+  Upgradecost: {fileID: 1839982149}
 --- !u!1 &486778582
 GameObject:
   m_ObjectHideFlags: 0
@@ -976,8 +996,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 440498249}
+        m_TargetAssemblyTypeName: SpearWorker, Assembly-CSharp
         m_MethodName: Upgradebutton1
         m_Mode: 1
         m_Arguments:
@@ -1499,7 +1519,7 @@ GameObject:
   - component: {fileID: 730892660}
   - component: {fileID: 730892659}
   m_Layer: 5
-  m_Name: Text
+  m_Name: UpgradeCost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1521,7 +1541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.1}
+  m_AnchoredPosition: {x: 0, y: 0.000011444092}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &730892659
@@ -1557,9 +1577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Upgrade
-
-'
+  m_Text: 
 --- !u!222 &730892660
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1651,8 +1669,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 1263354878}
+        m_TargetAssemblyTypeName: ShieldWorker, Assembly-CSharp
         m_MethodName: Upgradebutton3
         m_Mode: 1
         m_Arguments:
@@ -1711,6 +1729,7 @@ GameObject:
   m_Component:
   - component: {fileID: 956784011}
   - component: {fileID: 956784012}
+  - component: {fileID: 956784013}
   m_Layer: 5
   m_Name: First upgrade 4
   m_TagString: Untagged
@@ -1793,6 +1812,28 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &956784013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956784010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae944a6a24885934381b9e124168fa31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1003688048}
+  timerUP4MaxValue: 10
+  timerUP4Value: 0
+  money4: 1000
+  upgraded4: 1
+  costUpgrade4: 0
+  Money4Text: {fileID: 1863191178}
+  Upgradecost: {fileID: 5685954}
+  slider4: {fileID: 956784012}
+  TimerUpgrade: 0
 --- !u!1 &960239464
 GameObject:
   m_ObjectHideFlags: 0
@@ -2075,8 +2116,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 1263354878}
+        m_TargetAssemblyTypeName: ShieldWorker, Assembly-CSharp
         m_MethodName: Clicked3
         m_Mode: 1
         m_Arguments:
@@ -2205,28 +2246,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyInGame: 0
-  addingMoney: 0
-  timerUP1MaxValue: 1
-  timerUP1Value: 0
-  timerUP2MaxValue: 3
-  timerUP2Value: 0
-  timerUP3MaxValue: 5
-  timerUP3Value: 0
-  timerUP4MaxValue: 10
-  timerUP4Value: 0
-  money1: 10
-  money2: 100
-  money3: 500
-  money4: 1000
   MoneyText: {fileID: 1016422579}
-  Money1Text: {fileID: 973995901}
-  Money2Text: {fileID: 1941234735}
-  Money3Text: {fileID: 960239465}
-  Money4Text: {fileID: 1863191178}
-  slider1: {fileID: 440498248}
-  slider2: {fileID: 1738516312}
-  slider3: {fileID: 1263354877}
-  slider4: {fileID: 956784012}
 --- !u!1 &1016422578
 GameObject:
   m_ObjectHideFlags: 0
@@ -2421,6 +2441,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1263354876}
   - component: {fileID: 1263354877}
+  - component: {fileID: 1263354878}
   m_Layer: 5
   m_Name: First upgrade 3
   m_TagString: Untagged
@@ -2503,6 +2524,27 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1263354878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1263354875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35721c604a84864f977ff95a2ea0b11, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1003688048}
+  timerUP3MaxValue: 5
+  timerUP3Value: 0
+  money3: 500
+  upgraded3: 1
+  costUpgrade3: 0
+  Money3Text: {fileID: 960239465}
+  Upgradecost: {fileID: 730892659}
+  slider3: {fileID: 1263354877}
 --- !u!1 &1368765640
 GameObject:
   m_ObjectHideFlags: 0
@@ -2787,8 +2829,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 956784013}
+        m_TargetAssemblyTypeName: ShiedAndSwordWorker, Assembly-CSharp
         m_MethodName: Clicked4
         m_Mode: 1
         m_Arguments:
@@ -2972,8 +3014,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 1738516313}
+        m_TargetAssemblyTypeName: SwordWorker, Assembly-CSharp
         m_MethodName: Upgradebutton2
         m_Mode: 1
         m_Arguments:
@@ -3285,6 +3327,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1738516311}
   - component: {fileID: 1738516312}
+  - component: {fileID: 1738516313}
   m_Layer: 5
   m_Name: First upgrade 2
   m_TagString: Untagged
@@ -3367,6 +3410,27 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1738516313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1738516310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a121b769f7c56e4bac280e90fd3c390, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 1003688048}
+  timerUP2MaxValue: 3
+  timerUP2Value: 0
+  money2: 100
+  upgraded2: 1
+  costUpgrade2: 0
+  Money2Text: {fileID: 1941234735}
+  Upgradecost: {fileID: 1898579277}
+  slider2: {fileID: 1738516312}
 --- !u!1 &1796526695
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,7 +3519,7 @@ GameObject:
   - component: {fileID: 1839982150}
   - component: {fileID: 1839982149}
   m_Layer: 5
-  m_Name: Text
+  m_Name: UpgradeCost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3477,7 +3541,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.1}
+  m_AnchoredPosition: {x: 0, y: 0.000011444092}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1839982149
@@ -3513,9 +3577,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Upgrade
-
-'
+  m_Text: 
 --- !u!222 &1839982150
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3617,7 +3679,7 @@ GameObject:
   - component: {fileID: 1898579278}
   - component: {fileID: 1898579277}
   m_Layer: 5
-  m_Name: Text
+  m_Name: UpgradeCost
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3639,7 +3701,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -10.1}
+  m_AnchoredPosition: {x: 0, y: 0.000011444092}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1898579277
@@ -3675,9 +3737,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Upgrade
-
-'
+  m_Text: 
 --- !u!222 &1898579278
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4234,8 +4294,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1003688048}
-        m_TargetAssemblyTypeName: Upgrades, Assembly-CSharp
+      - m_Target: {fileID: 1738516313}
+        m_TargetAssemblyTypeName: SwordWorker, Assembly-CSharp
         m_MethodName: Clicked2
         m_Mode: 1
         m_Arguments:
