@@ -30,6 +30,7 @@ public class MainMouse : MonoBehaviour
         if (vida == materials.Length + 1)
         {
             this.death();
+            vida = 1;
         }
 
         rend.sharedMaterial = materials[vida - 1];
